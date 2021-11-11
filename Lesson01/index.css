@@ -3,8 +3,21 @@
     padding: 0;
 }
 body{
-    height: 100vh;
+    height: 100%;
+    position: relative;
+
 }
+.burger_menu{
+
+}
+.header{
+    display: flex;
+    align-items: flex-start;
+    height: 70px;
+    background-color: #F1F1F1;
+
+}
+
 .info{
     position: absolute;
     height: 40px;
@@ -15,24 +28,16 @@ body{
     background: #D8BF95;
     border-radius: 0px;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #F1F1F1;
-    border-radius: 0px;
-    height: 12%;
 
-}
 .pre_info{
     background-color: #D8BF95;
     text-align: center;
     height: 20px;
 }
 .logo{
-    display: inline-block;
     position: absolute;
-    right: 50%;
+    top: 35px;
+    left: 44%;
 
 
 }
@@ -41,12 +46,15 @@ header{
     align-items: center;
     justify-content: center;
 }
+.menu2_list{
+    margin-left:570px;
+}
 ul{
     list-style: none;
 
 }
 .menu_item, .menu2_item{
-    margin: 0px 40px;
+    margin: 30px 40px;
 
 
 }
@@ -105,11 +113,14 @@ font-size: 14px;
 }
 
 .body{
+    display: flex;
+    flex-direction: column;
     position: relative;
     height: 690px;
 }
 
 .body_title{
+    display: block;
     width: 620px;
     height: 240px;
   font-family: Roboto,SansSerif;
@@ -118,28 +129,41 @@ font-size: 14px;
     margin-top: 37px;
     margin-left: 64px;
 }
-
-
-.body_logos{
+.card {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+align-items: start;
+    padding-bottom: 30px;
+    width: 300px;
+}
+.cards_about{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-left: 64px;
+    margin-right: 64px;
+
 }
 
-
-.body_logos img{
-   width: 233px;
+.cards_about img{
+    width: 233px;
     height: 233px;
     margin: 0 100px;
 }
+.card p{
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding:20px 0px;
 
-.body_info{
-    display: grid;
-    align-items: center;
-    justify-content: start;
-    grid-template-columns: 1fr 1fr 1fr;
-margin: 10px 64px;
 }
+
+
+
 
 .learn_more{
     position: absolute;
@@ -169,25 +193,39 @@ padding-bottom: 30px;
 .menus{
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+
+
 }
 
 .menus p{
-    margin:  80px 0 21px 0;
-    font-family: Roboto , SansSerif;
-    font-size: 18px;
+    font-family: Roboto;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 21px;
+    margin-top: 20px;
+
+}
+.shopBy{
+    margin-left: 64px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
 }
 
-.footer_menu {
+.footer_menu_list {
     display: grid;
     justify-content: start;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
 
     margin-left:  64px;
     margin-right: 150px;
@@ -195,14 +233,14 @@ padding-bottom: 30px;
 
 }
 footer{
-    position: relative;
+
     background-color: #F1F1F1;
 
 }
 
 .footer_menu li{
     font-family: Roboto, SansSerif;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -221,6 +259,14 @@ footer{
 
 }
 .footer_menu2 li{
+
+    font-family: Roboto, SansSerif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
     padding-bottom: 10px;
 }
 
@@ -232,10 +278,10 @@ footer{
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
-    position: absolute;
+
     left: 64px;
     bottom: 35px;
-
+color: black;
 
 }
 
@@ -271,11 +317,262 @@ footer{
     margin-left: 160px;
     margin-bottom: 2px;
 }
-.insta{
+.insta, .facebook{
     max-width: 40px;
     max-height: 40px;
 }
-.facebook{
-    max-width: 40px;
-    max-height: 40px;
+
+@media screen and (min-width: 1920px){
+   .header{
+       height: 80px;
+   }
+    .menu2_list{
+        margin-left:1000px;
+    }
+    .menu_item a, .menu2_item a{
+        text-decoration: none;
+        font-family: Roboto, SansSerif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-transform: uppercase;
+
+        color: #000000;
+
+    }
+    .menu2_item p{
+        color: #C4C4C4;
+        font-family: Roboto, SansSerif;
+        font-size: 30px;
+        font-style: normal;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 900px;
+
+    }
+
+    .body_title{
+        display: block;
+        width: 920px;
+        height: 100px;
+        font-family: Roboto,SansSerif;
+        font-style: normal;
+        font-size: 53px;
+        margin-top: 37px;
+        margin-left: 64px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-bottom: 10px;
+        width: 400px;
+    }
+    .cards_about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 95px;
+        margin-right: 95px;
+        margin-top: 200px;
+    }
+
+    .cards_about img{
+        width: 333px;
+        height: 333px;
+        margin: 0 100px;
+    }
+    .card p{
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding:20px 0px;
+
+    }
+    .learn_more{
+
+        font-size: 28px;
+    }
+    .menus p{
+
+        font-size: 33px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .footer_menu{
+        padding-right: 100px;
+    }
+
+    .footer_bottom_list{
+        margin-left: 300px;
+        margin-top: 30px;
+        height: 50px;
+
+    }
+
+    .footer_bottom_list li{
+
+        font-size: 20px;
+    }
+    .insta, .facebook{
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+div .kindof_jewelry{
+    top: 150px;
+    left: 20px;
+}
+    div .kindof_jewelry2{
+        top: 900px;
+        right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .burger_menu {
+        display: block;!important;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 50;
+        left: 5px;
+
+    }
+.burger_menu:before, .burger_menu:after{
+    content: " ";
+    background-color: dimgray;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+    .burger_menu:before{
+        top: 0;
+    }
+    .burger_menu:after{
+        bottom: 0;
+    }
+    .burger_menu span{
+        position: absolute;
+        background-color: dimgray;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+.header_menu{
+
+    position: fixed;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    background-color: rgba(211, 212, 201, 0.5);
+
+}
+.menu_list{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    right: 5px;
+    top: 50px;
+}
+
+.menu_list a, .menu2_list a{
+    font-family: Roboto,SansSerif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.burger_active:before{
+transform: rotate(45deg);
+    top: 9px;
+}
+.burger_active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+.burger_active span{
+    transform: scale(0);
+}
+.header_active{
+    top: 0;
+}
+    section div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    section>img{
+
+    }
+
+
+    div .kindof_jewelry{
+        top: 150px;
+        left: 20px;
+    }
+    div .kindof_jewelry2{
+        top: 900px;
+        right: 20px;
+    }
+
+    .body_title{
+        display: block;
+        width: 520px;
+        height: 190px;
+        font-family: Roboto,SansSerif;
+        font-style: normal;
+        font-size: 33px;
+        margin-top: 37px;
+        margin-left: 44px;
+    }
+
+    .cards_about{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .menus{
+        display: flex;
+        align-items: center;
+flex-direction: row;
+        padding: 20px;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+    .footer_menu2{
+        display: flex;
+        align-items: center;
+flex-direction: row;
+
+        margin-left: 20px;
+
+    }
+
+    .footer_menu_list{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-left:  35px;
+        margin-right: 70px;
+    }
 }
