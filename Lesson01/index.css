@@ -438,6 +438,18 @@ div .kindof_jewelry{
     }
 
 }
+@media screen and (max-width: 1400px){
+    div .kindof_jewelry{
+        top: 150px;
+        left: 20px;
+    }
+    div .kindof_jewelry2{
+        top: 150px;
+        right: 20px;
+    }
+
+}
+
 
 @media screen and (max-width: 768px){
     .burger_menu {
@@ -556,9 +568,20 @@ flex-direction: row;
     }
 
     footer{
-        position: absolute;
-        bottom: 0;
+        margin-bottom: 0;
+
     }
+
+
+    .shopBy{
+        margin-left: 0px;
+    }
+ .footer_menu{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 70px;
+ }
     .footer_menu2{
         display: flex;
         align-items: center;
