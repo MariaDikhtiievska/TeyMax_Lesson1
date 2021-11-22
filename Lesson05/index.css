@@ -1,0 +1,19 @@
+body{
+
+    background-color: #dae9eb;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #bccfd1;
+    border: 3px solid #607a7d;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    -webkit-transition: background-color  ease-out 1s;
+}
+.square:hover{
+
+    background-color:#a3b6b8;
+}
